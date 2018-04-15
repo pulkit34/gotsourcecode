@@ -1,0 +1,65 @@
+<h2 style="text-align: center;margin-top: 2%; margin-bottom:4%;color:sandybrown">
+  <b><u>HOUSES</u></b></h2>
+  <div class="container">
+    <div class="row" *ngIf="allHouses.length>0">
+      <div class="col-md-4" *ngFor="let house of allHouses;let i=index">
+
+        <div class="card" style="width: 16rem; margin-bottom:4%;">
+            <img class="card-img-top img-thumbnail" *ngIf="i==0;" src="../../assets/Houses/Algood.jpg" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==1;" src="../../assets/Houses/index.jfif" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==2;" src="../../assets/Houses/umber.jpg" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==3;" src="../../assets/Houses/Ambrose.png" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==4;" src="../../assets/Houses/app.gif" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==5;" src="../../assets/Houses/Arryn Of Gull.jpg" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==6;" src="../../assets/Houses/Arryn.jpg " alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==7;" src="../../assets/Houses/Ashford.jpg" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==8;" src="../../assets/Houses/HouseAshwood.png" alt="Card image cap">
+            <img class="card-img-top img-thumbnail" *ngIf="i==9;" src="../../assets/Houses/Baelish.jpg" alt="Card image cap">
+            
+            <div class="card-body">
+              <p class="card-title" style="border-bottom: solid 1px">{{house.name}}</p>
+  
+              <a class="btn btn-danger"[routerLink]="['/view',i+1]"><span style="color:seashell">View</span></a>
+
+            </div>
+
+          </div>
+          </div>
+           
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+      
+
